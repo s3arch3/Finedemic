@@ -11,7 +11,7 @@
     <!-- //* page title -->
     <title>Finedemic</title>
     <!-- //* favicon -->
-    <link rel="icon" type="icons/png" sizes="32x32" href="/img/icons/favicon.png" />
+    <link rel="icon" type="icons/png" sizes="32x32" href="img/icons/favicon.png" />
 </head>
 
 <body>
@@ -20,7 +20,7 @@
     <nav class="orange z-depth-2">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="#home" class="brand-logo"><img src="/img/icons/finedemic-blk.png" height="63px"></a>
+                <a href="#home" class="brand-logo"><img src="img/icons/finedemic-blk.png" height="63px"></a>
                 <a href="#!" data-target="mobile-demo" class="sidenav-trigger black-text"><i
                         class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -30,7 +30,7 @@
                     <li><a href="#find" class="black-text">Find Us</a></li>
                     <li><a href="#modal-signup" class="black-text modal-trigger"><i class="material-icons left">person</i><b>Sign
                                 Up</b></a></li>
-                    <li><a href="#" class="black-text"><i class="material-icons left">person_add</i><b>Log
+                    <li><a href="#modal-login" class="black-text modal-trigger"><i class="material-icons left">person_add</i><b>Log
                                 In</b></a></li>
                 </ul>
                 <!-- //* sidenav trigger -->
@@ -41,14 +41,14 @@
                     <li><a href="#find" class="black-text">Find Us</a></li>
                     <li><a href="#modal-signup" class="black-text modal-trigger"><i class="material-icons left">person</i><b>Sign
                                 Up</b></a></li>
-                    <li><a href="#" class="black-text"><i class="material-icons left">person_add</i><b>Log
+                    <li><a href="#modal-login" class="black-text modal-trigger"><i class="material-icons left">person_add</i><b>Log
                                 In</b></a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- //* login and signup modal -->
+    <!-- //* signup modal -->
     <!-- Modal Structure -->
     <div id="modal-signup" class="modal">
         <div class="modal-content">
@@ -102,31 +102,56 @@
                             <label for="password">Confirm Password</label>
                         </div>
                     </div>
-                    <!-- //* row 6 -->
+                </form>
+            </div>
+        </div>
+        <!-- //* signup modal content end -->
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn">Register</a>
+        </div>
+    </div>
+
+    <!-- //* login modal -->
+    <!-- Modal Structure -->
+    <div id="modal-login" class="modal">
+        <div class="modal-content">
+            <h4>Login</h4>
+            <hr>
+            Log in to make your reservations track them realtime.
+        </div>
+        <!-- //* login modal content start -->
+        <div class="modal-content">
+            <div class="row">
+                <form class="col s12">
+                    <!-- //* row 1 -->
                     <div class="row">
-                        <div class="col s12">
-                            <div class="input-field">
-                                <input id="email_inline" type="email" class="validate">
-                                <label for="email_inline">Email</label>
-                                <span class="helper-text" data-error="Wrong Email Format" data-success="Right">Email</span>
-                            </div>
+                        <!-- //* username -->
+                        <div class="input-field col s12">
+                            <input place="I am not editable" id="username" type="text" class="validate">
+                            <label for="username">Username</label>
+                        </div>
+                    </div>
+                    <!-- //* row 2 -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
                         </div>
                     </div>
                 </form>
             </div>
         </div>
-        <!-- //* signup modal content end -->
-
+        <!-- //* login modal content end -->
         <div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-close waves-effect waves-green btn">Login</a>
         </div>
     </div>
 
-    <!-- //* parallax -->
+    <!-- //* parallax main -->
     <div id="index-banner" class="parallax-container section">
         <br><br><br><br>
         <div class="container">
-            <img src="/img/index/logo-finedemic.png" style="width: 100%" alt="Finedemic logo.">
+            <img src="img/index/logo-finedemic.png" style="width: 100%" alt="Finedemic logo.">
         </div>
         <br><br><br><br>
         <div class="row center">
@@ -134,7 +159,7 @@
                     Now!</b></a>
         </div>
         <div class="parallax" style="opacity: .7;">
-            <img src="/img/index/bg1.jpg" alt="Image of a fine dining.">
+            <img src="img/index/bg1.jpg" alt="Image of a fine dining.">
         </div>
     </div>
 
@@ -150,13 +175,13 @@
             <div class="col s12 m12 l5">
                 <div class="carousel carousel-slider">
                     <a href="#one!" class="carousel-item">
-                        <img src="/img/index/menu-1.jpg" alt="" style="border-radius: 10px;" width="50%">
+                        <img src="img/index/menu-1.jpg" alt="" style="border-radius: 10px;" width="50%">
                     </a>
                     <a href="#two!" class="carousel-item">
-                        <img src="/img/index/menu-2.jpg" alt="" style="border-radius: 10px;" width="50%">
+                        <img src="img/index/menu-2.jpg" alt="" style="border-radius: 10px;" width="50%">
                     </a>
                     <a href="#three!" class="carousel-item">
-                        <img src="/img/index/menu-3.jpg" alt="" style="border-radius: 10px;" width="50%">
+                        <img src="img/index/menu-3.jpg" alt="" style="border-radius: 10px;" width="50%">
                     </a>
                 </div>
             </div>
@@ -178,7 +203,7 @@
     <!-- //* parallax 2 -->
     <div id="index-banner-2" class="parallax-container valign-wrapper section" style="height: 300px;">
         <div class="parallax" style="opacity: .7;">
-            <img src="/img/index/bg2.jpg" alt="Image of a restaurant." style="width: 100%;">
+            <img src="img/index/bg2.jpg" alt="Image of a restaurant." style="width: 100%;">
         </div>
     </div>
 
@@ -215,7 +240,7 @@
     <!-- //* parallax 3 -->
     <div id="index-banner-3" class="parallax-container valign-wrapper section" style="height: 300px;">
         <div class="parallax" style="opacity: .7;">
-            <img src="/img/index/bg2.jpg" alt="Image of a restaurant." style="width: 100%;">
+            <img src="img/index/bg2.jpg" alt="Image of a restaurant." style="width: 100%;">
         </div>
     </div>
 
