@@ -28,7 +28,7 @@
                     <li><a href="#menu" class="black-text">Menu</a></li>
                     <li><a href="#" class="black-text">Reservation</a></li>
                     <li><a href="#find" class="black-text">Find Us</a></li>
-                    <li><a href="#" class="black-text"><i class="material-icons left">person</i><b>Sign
+                    <li><a href="#modal-signup" class="black-text modal-trigger"><i class="material-icons left">person</i><b>Sign
                                 Up</b></a></li>
                     <li><a href="#" class="black-text"><i class="material-icons left">person_add</i><b>Log
                                 In</b></a></li>
@@ -39,7 +39,7 @@
                     <li><a href="#menu" class="black-text">Menu</a></li>
                     <li><a href="#" class="black-text">Reservation</a></li>
                     <li><a href="#find" class="black-text">Find Us</a></li>
-                    <li><a href="#" class="black-text"><i class="material-icons left">person</i><b>Sign
+                    <li><a href="#modal-signup" class="black-text modal-trigger"><i class="material-icons left">person</i><b>Sign
                                 Up</b></a></li>
                     <li><a href="#" class="black-text"><i class="material-icons left">person_add</i><b>Log
                                 In</b></a></li>
@@ -47,6 +47,74 @@
             </div>
         </div>
     </nav>
+
+    <!-- //* login and signup modal -->
+    <!-- Modal Structure -->
+    <div id="modal-signup" class="modal">
+        <div class="modal-content">
+            <h4>Register</h4>
+            <hr>
+            Create your account. It's free and only takes a minute.
+        </div>
+        <!-- //* signup modal content start -->
+        <div class="modal-content">
+            <div class="row">
+                <form class="col s12">
+                    <!-- //* row 1 -->
+                    <div class="row">
+                        <!-- //* first name -->
+                        <div class="input-field col s6">
+                            <input placeholder="First Name" id="first_name" type="text" class="validate">
+                            <!-- <label for="first_name">First Name</label> -->
+                        </div>
+                        <!-- //* last name -->
+                        <div class="input-field col s6">
+                            <input placeholder="Last Name" id="last_name" type="text" class="validate">
+                            <!-- <label for="last_name">Last Name</label> -->
+                        </div>
+                    </div>
+                    <!-- //* row 2 -->
+                    <div class="row">
+                        <!-- //* username -->
+                        <div class="input-field col s12">
+                            <input place="I am not editable" id="username" type="text" class="validate">
+                            <label for="username">Username</label>
+                        </div>
+                    </div>
+                    <!-- //* row 3 -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="password" type="password" class="validate">
+                            <label for="password">Password</label>
+                        </div>
+                    </div>
+                    <!-- //* row 4 -->
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <input id="email" type="email" class="validate">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    <!-- //* row 5 -->
+                    <div class="row">
+                        <div class="col s12">
+                            This is an inline input field:
+                            <div class="input-field inline">
+                                <input id="email_inline" type="email" class="validate">
+                                <label for="email_inline">Email</label>
+                                <span class="helper-text" data-error="wrong" data-success="right">Helper text</span>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- //* signup modal content end -->
+
+        <div class="modal-footer">
+            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+        </div>
+    </div>
 
     <!-- //* parallax -->
     <div id="index-banner" class="parallax-container section">
@@ -70,7 +138,7 @@
         <div class="row">
             <div class="col s12 m12 l12 center">
                 <h2></h2>
-                <h5><b>Finedemic Restaurant</b></h5>
+                <h5><b><a href="#home" class="black-text">Finedemic Restaurant</a></b></h5>
                 <h2></h2>
             </div>
             <div class="col s12 m12 l5">
@@ -112,7 +180,7 @@
     <section id="menu"></section>
     <div class="container center section">
         <h2></h2>
-        <h5><b>Product Gallery</b></h5>
+        <h5><b><a href="#home" class="black-text">Product Gallery</a></b></h5>
         <h2></h2>
         <div class="row">
             <div class="col s12 m6 l6"><img class="materialboxed hoverable" src="img/gallery/1.jpeg"
@@ -149,7 +217,7 @@
     <section id="find"></section>
     <div class="container center section">
         <h2></h2>
-        <h5><b>Find Us!</b></h5>
+        <h5><b><a href="#home" class="black-text">Find Us!</a></b></h5>
         <h2></h2>
         <!-- //? google maps embed one liner -->
         <iframe
@@ -199,8 +267,10 @@
     </footer>
 
     <!--JavaScript at end of body for optimized loading-->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script> -->
     <!-- //* makes the sidenav work this is jquery library -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+    <!-- //* js library -->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <!-- //* code to prep the sidenav -->
     <script>$(document).ready(function () { $('.sidenav').sidenav(); });</script>
@@ -210,6 +280,8 @@
     <script>$(document).ready(function () { $('.carousel.carousel-slider').carousel({ fullWidth: false }); });</script>
     <!-- //* code to prep the materialbox -->
     <script>$(document).ready(function () { $('.materialboxed').materialbox(); });</script>
+    <!-- //* code to prep the modal -->
+    <script>$(document).ready(function () { $('.modal').modal({ preventScrolling: true }); });</script>
 </body>
 
 </html>
