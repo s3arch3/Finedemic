@@ -3,10 +3,15 @@
 > This is a collaborative project stripped somewhere and
 > overhauled from the ground up.
 
-### Test Credentials
-*Use the accounts below to test the website:*
-*Username and Password*
-- ["john_doe",  "***123***"],
-- ["jane_doe",  "***123***"],
-- ["admin_john_doe",  "***123***"],
-- ["admin_jane_doe",  "***123***"]
+> Steps
+>> Copy this folder "Finedemic" inside C:\xampp\htdocs and start your
+>> Apache and MySQL services.
+
+
+> ### Test Credentials
+> *Use the accounts below to test the website:*
+> *Username and Password*
+> - ["*johndoe*",  "*qweqwe*"],
+> - ["*janedoe*",  "*qweqwe*"],
+> - ["*adminjohndoe*",  "*qweqwe*"],
+> - ["*adminjanedoe*",  "*qweqwe*"]
