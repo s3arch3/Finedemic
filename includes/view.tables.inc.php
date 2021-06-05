@@ -3,7 +3,7 @@
 
 if(isset($_SESSION['user_id'])){
     
-    require 'dbh.inc.php';
+    require 'includes/dbh.inc.php';
 
     
     $user = $_SESSION['user_id'];
