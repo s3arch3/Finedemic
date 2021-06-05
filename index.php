@@ -194,9 +194,9 @@ require "header.php";
                   </thead>
                   <tbody>
                     <tr>
-                      <th scope="row"><em>" . $date . "</em></th>
-                      <td>" . $row["open_time"] . "</td>
-                      <td>" . $row["close_time"] . "</td>
+                      <th scope="row"><em>' . $date . '</em></th>
+                      <td>' . $row['open_time'] . '/td>
+                      <td>' . $row['close_time'] . '</td>
                     </tr>
                   </tbody>
                 </table>
@@ -214,7 +214,7 @@ require "header.php";
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row"><em>" . $date . "</em></th>
+                    <th scope="row"><em>' . $date . '</em></th>
                     <td>12:00</td>
                     <td>00:00</td>
                   </tr>
@@ -229,14 +229,12 @@ require "header.php";
           ?>
         </div><br>
         <!-- //* form end -->
-
-        <!-- //* visit us -->
-        <div class="col">
-          <h4 class="text-right"><strong>Visit Us</strong></h4>
-          <p class="text-right">Finedemic<br><i class="fa fa-map-marker"></i>&nbsp; Leof. Posidonos 109, <br>Glyfada <br><br>email: info@domain.com<br>phone: +00 (123) 456 7890</p>
-        </div>
       </div>
       <!-- //* col end -->
+      <div class="col">
+        <h4 class="text-right"><strong>Visit Us</strong></h4>
+        <p class="text-right">Finedemic<br><i class="fa fa-map-marker"></i>&nbsp; Leof. Posidonos 109, <br>Glyfada <br><br>email: info@domain.com<br>phone: +00 (123) 456 7890</p>
+      </div>
     </div>
     <!-- //* row end -->
   </div>

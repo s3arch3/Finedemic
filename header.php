@@ -67,7 +67,7 @@ session_start();
   <!-- //* body start -->
   <body>
     <!-- //* navbar start -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top orange">
       <div class="container">
         <!-- //* supposed to be finedemic logo -->
         <a class="navbar-brand" href="index.php">

@@ -1,2 +1,1 @@
-<h3>Restaurant Reservation Application</h3>
-
+<h3>Finedemic Reservation Website</h3>

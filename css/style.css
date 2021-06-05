@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
 }
 
-/*body*/
 body {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -14,7 +16,6 @@ h3 {
   text-shadow: 2px 1px grey;
 }
 
-/*headers*/
 .header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(../img/1.jpg);
@@ -32,13 +33,12 @@ h3 {
   background-attachment: fixed;
 }
 
-/*navbar*/
 .navbar {
   background-color: white;
 }
 
 .navbar-brand {
-  font-family: "Brush Script MT", "Brush Script Std", cursive;
+  font-family: "Montserrat", sans-serif;
 }
 
 .navbar .navbar-nav .active {
@@ -54,9 +54,6 @@ h3 {
   color: black;
 }
 
-.navbar .navbar-nav li a {
-}
-
 .header-button .btn {
   margin-top: 40vh;
 }
@@ -69,7 +66,6 @@ h3 {
   cursor: pointer;
 }
 
-/*footer*/
 .footer {
   padding-top: 30px;
   padding-bottom: 30px;
