@@ -49,7 +49,7 @@ session_start();
     }
 
     .container {
-      background: #f9f9f9;
+      /* background: #f9f9f9; */
     }
 
     .img {
@@ -67,11 +67,11 @@ session_start();
   <!-- //* body start -->
   <body>
     <!-- //* navbar start -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top orange">
+    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="width: 100%; background-color: #FF9800;">
       <div class="container">
         <!-- //* supposed to be finedemic logo -->
-        <a class="navbar-brand" href="index.php">
-          <strong><em>Finedemic</em></strong>
+        <a class="navbar-brand" href="#">
+          <img src="img\finedemic-blk.png" width="50" height="50" class="d-inline-block align-top" alt="">
         </a>
 
         <!-- //* for hamburger menu -->
@@ -146,8 +146,9 @@ session_start();
             echo '
             <div>
               <ul class="navbar-nav ml-auto">
-                <li><a class="nav-link fa fa-sign-in" data-toggle="modal" data-target="#myModal_reg">&nbsp;Sign Up</a></li>
-                <li><a class="nav-link fa fa-user-plus" data-toggle="modal" data-target="#myModal_login">&nbsp;Log In</a></li>
+                <li><a class="nav-link fa fa-sign-in text-black"  data-toggle="modal" data-target="#myModal_reg">&nbsp;<span style="font-family:Montserrat; font-weight:bold;">Sign Up</span></a></li>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <li><a class="nav-link fa fa-user-plus text-black" data-toggle="modal" data-target="#myModal_login">&nbsp;<span style="font-family:Montserrat; font-weight:bold;">Log In</span></a></li>
               </ul>
             </div>
             ';
