@@ -10,7 +10,7 @@
         <a href="index.php"><i class="fa fa-rss"></i></a>
       </div>
       <div class="copyright">
-        <p class="white"> copyright &copy; <b>Chocolate & Moer</b></p>
+        <p class="white"> copyright &copy; <b>Finedemic</b></p>
         <p><i class="fa fa-phone"></i> +00 (123) 456 7890 &nbsp;<i class="fa fa-envelope-o"></i> info@domain.com</p>
       </div>
     </div>

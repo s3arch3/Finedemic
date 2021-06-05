@@ -5,10 +5,10 @@ require "header.php";
 <header class="header">
     <div class="row">
         <div class="col-md-12 text-center">
-   <a class="logo"><img src="img/logo1.png" alt="logo"></a>
+   <a class=""><img src="img/logo1.png" alt="logo" style="width: 100%"></a>
    </div>
         <div class="col-md-12 text-center">
-            <button type="button" onclick="window.location.href='reservation.php'" class="btn btn-outline-light btn-lg"><em>Make a Reservation Now!</em></button>
+            <button type="button" onclick="window.location.href='reservation.php'" class="btn btn-outline-light btn-lg"><em>Reserve Now!</em></button>
         </div>
     </div>
 </header>
@@ -20,7 +20,7 @@ require "header.php";
 <section id="aboutus">
 
  <div class="container">
-   <h3 class="text-center"><br><br>Chocolate & Moer</h3>
+   <h3 class="text-center"><br><br>Finedemic</h3>
    <div class="row">
 <!--carousel-->
      <div class="col-sm"><br><br>
@@ -57,9 +57,13 @@ require "header.php";
      <div class="col-sm">
     	<div class="arranging"><br><hr>
 	<h4 class="text-center">Our Story</h4>
-	<p><br>The restaurant MonkaS, first opened in 2004 in “Psiri”, one of the oldest districts of Athens in the historical center of the city. In 2010 , the restaurant was awarded its first Michelin star and has retained it since.<br><br>
-	The same year, the restaurant relocated to the 6th floor of the Onassis Cultural Centre in Syngrou Avenue and was recently redesigned by award-winning architectural firm Divercity.In warmer months of the year the restaurant moves
-	to the 7th floor of the building, offering a unique outdoor setting with panoramic view of the Acropolis, Lycebettus hill and the city skyline.<br><br><br></p><hr>
+	<p><br>The Finedemic is an online restaurant first established in 2021, by our
+                founders Barruela, Brigoli, Garcia, Vibiesca and Villanueva.<br>
+                During the pandemic of the COVID-19 people within the Philippines has struggled to live in
+                isolation, as it is a well needed precaution to fight against the pandemic, people could not be of
+                close proximity of each other, go on to travel places they have not been, or even buy food for daily
+                consumption. Hence, by our founders Finedemic is created, to help those who struggle during these
+                trying times, providing immaculate service for our customers.<br><br><br></p><hr>
 	</div>
      </div>
     </div><br>
@@ -100,7 +104,7 @@ require "header.php";
     <h3 class="text-center"><br><br>Reservation<br><br></h3>
     <img  src="img/16.jpg" class="img-fluid rounded">
     <button type="button" onclick="window.location.href='reservation.php'" class="btn btn-outline-dark btn-block btn-lg">Make a reservation Now!</button>
-        
+
 </div><br><br>
 
 <div class="header2">
@@ -111,11 +115,11 @@ require "header.php";
     <div class="container">
     <h3 class="text-center"><br><br>Find us!</h3><br>
         <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3150.1829966583578!2d23.75232003459512!3d37.85600838634192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m3!3m2!1d37.8566691!2d23.752137599999998!4m0!5e0!3m2!1sel!2sgr!4v1524459240043" style= "width:100%;  height:250px; border:0;" allowfullscreen></iframe>
-    
+
         <div class="row staff">
             <div class="col">
             <h4><strong>Opening Hours</strong></h4>
-                       
+
                 <div class="signup-form">
                     <form action="#footer" method="post">
                         <div class="form-group">
@@ -126,15 +130,15 @@ require "header.php";
                             <button type="submit" name="check_schedule" class="btn btn-dark btn-block">Check Open Time</button>
                         </div>
                     </form>
-                    
+
 <?php
 
 if(isset($_POST['check_schedule'])){
-      
+
 require 'includes/dbh.inc.php';
-            
+
 $date= $_POST['date'];
- 
+
     $sql = "SELECT * FROM schedule WHERE date = '$date'";
     $result = $conn->query($sql);
     if ($result->num_rows == 1) {
@@ -177,18 +181,18 @@ $date= $_POST['date'];
                    </tbody>
                 </table>";
             }
-         
+
    //close connection
    mysqli_close($conn);
 }
 ?>
-                        
+
                 </div><br>
             </div>
 
             <div class="col">
             <h4 class="text-right"><strong>Visit Us</strong></h4>
-            <p class="text-right">Chocolate & Moer<br><i class="fa fa-map-marker"></i>&nbsp; Leof. Posidonos 109, <br>Glyfada <br><br>email: info@domain.com<br>phone: +00 (123) 456 7890</p>
+            <p class="text-right">Finedemic<br><i class="fa fa-map-marker"></i>&nbsp; Leof. Posidonos 109, <br>Glyfada <br><br>email: info@domain.com<br>phone: +00 (123) 456 7890</p>
             </div>
 
 	</div>
