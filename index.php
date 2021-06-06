@@ -234,7 +234,7 @@ require "header.php";
       <!-- //* col end -->
       <div class="col">
         <h4 class="text-right"><strong>Visit Us</strong></h4>
-        <p class="text-right">Finedemic<br><i class="fa fa-map-marker"></i>&nbsp; Leof. Posidonos 109, <br>Glyfada <br><br>email: info@domain.com<br>phone: +00 (123) 456 7890</p>
+        <p class="text-right">Finedemic<br><i class="fa fa-map-marker"></i>&nbsp; Congressional Road <br>UCC <br><br>Email: finedemic@mail.com<br>Phone: (02) 8896-9191</p>
       </div>
     </div>
     <!-- //* row end -->

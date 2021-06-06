@@ -49,7 +49,7 @@ h3 {
 }
 
 .navbar {
-  background-color: white;
+  background-color: orange;
 }
 
 .navbar-brand {
@@ -66,7 +66,7 @@ h3 {
 
 .navbar .navbar-nav .nav-item a:hover {
   background-color: #d1c8c8;
-  color: black;
+  color: green;
 }
 
 .header-button .btn {

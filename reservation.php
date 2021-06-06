@@ -85,7 +85,7 @@ require "header.php";
             </div>
 
             <div class="form-group">
-              <label>Enter extra Comments</label>
+              <label>Dining Requests</label>
               <textarea class="form-control" name="comments" placeholder="Comments" rows="3"></textarea>
               <small class="form-text text-muted">Comments must be less than 200 characters.</small>
             </div>

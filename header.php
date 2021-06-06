@@ -126,7 +126,6 @@ session_start();
             <div>
               <ul class="navbar-nav ml-auto">
                 <li><a class="nav-link fa fa-sign-in text-black"  data-toggle="modal" data-target="#myModal_reg">&nbsp;<span style="font-family:Montserrat; font-weight:bold;">Sign Up</span></a></li>
-                &nbsp;&nbsp;&nbsp;&nbsp;
                 <li><a class="nav-link fa fa-user-plus text-black" data-toggle="modal" data-target="#myModal_login">&nbsp;<span style="font-family:Montserrat; font-weight:bold;">Log In</span></a></li>
               </ul>
             </div>
@@ -201,6 +200,18 @@ session_start();
                   <div class="form-group">
                     <button type="submit" name="login-submit" class="btn btn-dark btn-lg btn-block">Log In</button>
                   </div>
+
+                  <!-- //* script to switch screens when registering -->
+                  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+                  <script type="text/javascript">
+                    function myModal_reg(){
+                      $(document).ready();
+                      $("#myModal_reg").modal("show"); //* shows register window
+                      $("#myModal_login").modal("hide"); //* hides login window
+                    }
+                  </script>
+
+                  <div class="text-center">Don't have an account yet? <a onClick="myModal_reg();" href="#">Sign up.</a></div>
                 </form>
               </div>
             </div>
@@ -322,7 +333,18 @@ session_start();
                 </form>
 
                 <!-- //* sign in if account already exists -->
-                <div class="text-center">Already have an account? <a href="#">Sign in.</a></div>
+
+                <!-- //* script to switch screens when registering -->
+                <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+                <script type="text/javascript">
+                  function myModal_login(){
+                    $(document).ready();
+                    $("#myModal_reg").modal("hide"); //* hides register window
+                    $("#myModal_login").modal("show"); //* shows login window
+                  }
+                </script>
+
+                <div class="text-center">Already have an account? <a onClick="myModal_login();" href="#">Log in.</a></div>
               </div>
             </div>
 
