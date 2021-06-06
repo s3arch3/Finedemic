@@ -74,7 +74,7 @@ if (isset($_POST['reserv-submit'])) {
         header("Location: ../reservation.php?error3=sqlerror1");
         exit();
       } else {
-        mysqli_stmt_bind_param($stmt, "xd", $fname, $lname, $guests, $tables, $date, $time, $tele, $comments, $user);
+        mysqli_stmt_bind_param($stmt, "sssssssss", $fname, $lname, $guests, $tables, $date, $time, $tele, $comments, $user);
         mysqli_stmt_execute($stmt);
         header("Location: ../reservation.php?reservation=success");
         exit();
