@@ -7,13 +7,14 @@ require "header.php";
   <div class="row">
     <!-- //* welcoming finedemic logo -->
     <div class="col-md-12 text-center">
-      <a class=""><img src="img/logo1.png" alt="logo" style="width: 100%"></a>
+      <a class="logo headerA"><img src="img/logo1.png" alt="logo" style="opacity: 1;"></a>
     </div>
 
     <!-- //* welcoming reserve now button -->
     <div class="col-md-12 text-center">
       <!-- //* takes you to reservation.php -->
-      <button type="button" onclick="window.location.href='reservation.php'" class="btn btn-outline-light btn-lg"><em>Reserve Now!</em></button>
+      <br>
+      <button type="button" onclick="window.location.href='reservation.php'" class="btn btn-success btn-lg"><em>Reserve Now!</em></button>
     </div>
   </div>
 </header>

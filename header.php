@@ -43,27 +43,6 @@ session_start();
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
   </head>
 
-  <style>
-    .flex-column {
-      max-width: 260px;
-    }
-
-    .container {
-      /* background: #f9f9f9; */
-    }
-
-    .img {
-      margin: 5px;
-    }
-
-    .logo img {
-      width: 150px;
-      height: 250px;
-      margin-top: 90px;
-      margin-bottom: 40px;
-    }
-  </style>
-
   <!-- //* body start -->
   <body>
     <!-- //* navbar start -->

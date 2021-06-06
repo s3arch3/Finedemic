@@ -16,9 +16,24 @@ h3 {
   text-shadow: 2px 1px grey;
 }
 
+.flex-column {
+  max-width: 260px;
+}
+
+.img {
+  margin: 5px;
+}
+
+.logo img {
+  margin-top: 150px;
+  margin-bottom: 40px;
+  width: 70%;
+  opacity: 1;
+}
+
 .header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/1.jpg);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/1.jpg); */
+  background-image: url(../img/1.jpg);
   height: 80vh;
   background-position: center;
   background-size: cover;
