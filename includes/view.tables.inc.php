@@ -14,16 +14,16 @@ if (isset($_SESSION['user_id'])) {
     $result = $conn->query($sql);
     if ($result->num_rows > 0) {
 
-      echo'
+      echo '
       <div class="container">
         <div class="row">
           <div class="col-sm text-center">
-            <p class="text-white bg-dark text-center">Reserved tables per date and time-zone</p><br>
+            <p class="text-white bg-dark text-center">Reserved tables per date and schedule</p><br>
             <table class="table table-hover table-bordered table-responsive-sm text-center">
             <thead>
               <tr>
               <th scope="col">Date</th>
-              <th scope="col">Time-Zone</th>
+              <th scope="col">Schedule</th>
               <th scope="col">Reserved Tables</th>
               </tr>
             </thead>

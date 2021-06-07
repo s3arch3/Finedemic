@@ -14,58 +14,59 @@ session_start();
 <!-- //* html document start -->
 <!DOCTYPE html>
 
-  <html lang="en">
+<html lang="en">
 
-  <head>
-    <!-- //* favicon -->
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
-    <!-- //* tab title -->
-    <title>Finedemic</title>
-    <!-- //* charset -->
-    <meta charset="utf-8">
-    <!-- //* viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- //* link to css -->
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <!-- //* style.css document -->
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <!-- //* font-awesome -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
-    <!-- //* bootstrap -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!-- //* googleapis jquery -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- //* font-awesome -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <!-- //* bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
-    <!-- //* bootstrap -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-  </head>
+<head>
+  <!-- //* favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
+  <!-- //* tab title -->
+  <title>Finedemic</title>
+  <!-- //* charset -->
+  <meta charset="utf-8">
+  <!-- //* viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- //* link to css -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <!-- //* style.css document -->
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <!-- //* font-awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <!-- //* bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- //* googleapis jquery -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- //* font-awesome -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <!-- //* bootstrap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <!-- //* bootstrap -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
 
-  <!-- //* body start -->
-  <body>
-    <!-- //* navbar start -->
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="width: 100%; background-color: #FF9800;">
-      <div class="container">
-        <!-- //* supposed to be finedemic logo -->
-        <a class="navbar-brand" href="#">
-          <img src="img\finedemic-blk.png" width="50" height="50" class="d-inline-block align-top" alt="">
-        </a>
+<!-- //* body start -->
 
-        <!-- //* for hamburger menu -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navi">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <!-- //* navbar start -->
+  <nav class="navbar navbar-expand-md navbar-light fixed-top" style="width: 100%; background-color: #fa9f42; ">
+    <div class="container">
+      <!-- //* supposed to be finedemic logo -->
+      <a class="navbar-brand" href="index.php#">
+        <img src="img\finedemic-blk.png" width="50" height="50" class="d-inline-block align-top" alt="">
+      </a>
 
-        <!-- //* navbar contents and conditionals -->
-        <div class="collapse navbar-collapse" id="navi">
-          <ul class="navbar-nav mr-auto">
-            <?php
-            //* checks if there is user_id in session?
-            if (isset($_SESSION['user_id'])) {
-              //* set navigation bar when logged in
-              echo '
+      <!-- //* for hamburger menu -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navi">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- //* navbar contents and conditionals -->
+      <div class="collapse navbar-collapse" id="navi">
+        <ul class="navbar-nav mr-auto">
+          <?php
+          //* checks if there is user_id in session?
+          if (isset($_SESSION['user_id'])) {
+            //* set navigation bar when logged in
+            echo '
               <li class="nav-item">
                 <a class="nav-link" href="reservation.php">New Reservation</a>
               </li>
@@ -74,9 +75,9 @@ session_start();
               </li>
               ';
 
-              //* set navigation bar when logged in and role of admin
-              if ($_SESSION['role'] == 2) {
-                echo '
+            //* set navigation bar when logged in and role of admin
+            if ($_SESSION['role'] == 2) {
+              echo '
                 <li class="nav-item">
                   <a class="nav-link" href="schedule.php">Edit Schedule</a>
                 </li>
@@ -87,75 +88,75 @@ session_start();
                   <a class="nav-link" href="view_tables.php">View Tables</a>
                 </li>
                 ';
-              }
             }
+          }
 
-            //* main page not logged in navigation bar
-            else {
-              echo '
+          //* main page not logged in navigation bar
+          else {
+            echo '
               <li class="nav-item">
-              <a class="nav-link" href="#aboutus">About Us</a>
+              <a class="nav-link" href="index.php#aboutus">About Us</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#gallery">Gallery</a>
+                <a class="nav-link" href="index.php#gallery">Gallery</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#reservation">Reservation</a>
+                <a class="nav-link" href="index.php#reservation">Reservation</a>
               </li>
 
               <li class="nav-item">
-                <a class="nav-link" href="#footer">Find Us</a>
+                <a class="nav-link" href="index.php#footer">Find Us</a>
               </li>
               ';
-            }
-            ?>
-          </ul>
+          }
+          ?>
+        </ul>
 
-          <?php
-          //* log out button when user is logged in
-          if (isset($_SESSION['user_id'])) {
-            echo '
+        <?php
+        //* log out button when user is logged in
+        if (isset($_SESSION['user_id'])) {
+          echo '
             <form class="navbar-form navbar-right" action="includes/logout.inc.php" method="post">
               <button type="submit" name="logout-submit" class="btn btn-outline-dark">Logout</button>
             </form>
             ';
-          } else {
-            echo '
+        } else {
+          echo '
             <div>
               <ul class="navbar-nav ml-auto">
-                <li><a class="nav-link fa fa-sign-in text-black"  data-toggle="modal" data-target="#myModal_reg">&nbsp;<span style="font-family:Montserrat; font-weight:bold;">Sign Up</span></a></li>
-                <li><a class="nav-link fa fa-user-plus text-black" data-toggle="modal" data-target="#myModal_login">&nbsp;<span style="font-family:Montserrat; font-weight:bold;">Log In</span></a></li>
+                <li><a id="nav-link-black1" class="nav-link fa fa-sign-in text-black btn btn-success btn-lg" data-toggle="modal" data-target="#myModal_reg">&nbsp;<span style="font-family:Montserrat;">Sign Up</span></a></li>
+                <li><a id="nav-link-black" class="nav-link fa fa-user-plus text-black" data-toggle="modal" data-target="#myModal_login">&nbsp;<span style="font-family:Montserrat; ">Log In</span></a></li>
               </ul>
             </div>
             ';
-          }
-          ?>
-        </div>
+        }
+        ?>
       </div>
-    </nav>
-    <!-- //* navbar end -->
+    </div>
+  </nav>
+  <!-- //* navbar end -->
 
-    <!-- //* login modal start -->
-    <div class="container">
-      <!-- //* id property is for the navbar link modal trigger -->
-      <div class="modal fade" id="myModal_login">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <!-- //* modal header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Login</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
+  <!-- //* login modal start -->
+  <div class="container">
+    <!-- //* id property is for the navbar link modal trigger -->
+    <div class="modal fade" id="myModal_login">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- //* modal header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Login</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
 
-            <!-- //* modal body -->
-            <div class="modal-body">
-              <!-- //* php code validating user input -->
-              <?php
-              if (isset($_GET['error1'])) {
-                //* script for modal to appear when error plus the message below
-                echo '
+          <!-- //* modal body -->
+          <div class="modal-body">
+            <!-- //* php code validating user input -->
+            <?php
+            if (isset($_GET['error1'])) {
+              //* script for modal to appear when error plus the message below
+              echo '
                 <script>
                   $(document).ready(function(){
                   $("#myModal_login").modal("show");
@@ -163,197 +164,238 @@ session_start();
                 </script>
                 ';
 
-                //* error handling of log in
-                if ($_GET['error1'] == "emptyfields") {
-                  echo '<h5 class="text-danger text-center">Fill all fields, please try again!</h5>';
-                } else if ($_GET['error1'] == "error") {
-                  echo '<h5 class="text-danger text-center">Error occured, please try again!</h5>';
-                } else if ($_GET['error1'] == "wrongpwd") {
-                  echo '<h5 class="text-danger text-center">Wrong password, please try again!</h5>';
-                } else if ($_GET['error1'] == "error2") {
-                  echo '<h5 class="text-danger text-center">Error occurred, Please try again!</h5>';
-                } else if ($_GET['error1'] == "nouser") {
-                  echo '<h5 class="text-danger text-center">Username or email not found, please try again!</h5>';
-                }
+              //* error handling of log in
+              if ($_GET['error1'] == "emptyfields") {
+                echo '<h5 class="text-danger text-center">Fill all fields, please try again!</h5>';
+              } else if ($_GET['error1'] == "error") {
+                echo '<h5 class="text-danger text-center">Error occured, please try again!</h5>';
+              } else if ($_GET['error1'] == "wrongpwd") {
+                echo '<h5 class="text-danger text-center">Wrong password, please try again!</h5>';
+              } else if ($_GET['error1'] == "error2") {
+                echo '<h5 class="text-danger text-center">Error occurred, Please try again!</h5>';
+              } else if ($_GET['error1'] == "nouser") {
+                echo '<h5 class="text-danger text-center">Username or email not found, please try again!</h5>';
               }
+            }
 
-              echo '<br>';
-              ?>
+            echo '<br>';
+            ?>
 
-              <!-- //* the actual login form -->
-              <div class="signin-form">
-                <form action="includes/login.inc.php" method="post">
-                  <!-- //* message -->
-                  <p class="hint-text">If you have already an account please log in.</p>
+            <!-- //* the actual login form -->
+            <div class="signin-form">
+              <form action="includes/login.inc.php" method="post">
+                <!-- //* message -->
+                <p class="hint-text">If you have already an account please log in.</p>
 
-                  <!-- //* username/email -->
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="mailuid" placeholder="Username Or Email" required="required">
-                  </div>
+                <!-- //* username/email -->
+                <div class="form-group">
+                  <input type="text" class="form-control" name="mailuid" placeholder="Username Or Email" required="required">
+                </div>
 
-                  <!-- //* password -->
-                  <div class="form-group">
-                    <input type="password" class="form-control" name="pwd" placeholder="Password" required="required">
-                  </div>
+                <!-- //* password -->
+                <div class="form-group">
+                  <input type="password" class="form-control" name="pwd" placeholder="Password" required="required">
+                </div>
 
-                  <!-- //* login button -->
-                  <div class="form-group">
-                    <button type="submit" name="login-submit" class="btn btn-dark btn-lg btn-block">Log In</button>
-                  </div>
-
-                  <!-- //* script to switch screens when registering -->
-                  <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
-                  <script type="text/javascript">
-                    function myModal_reg(){
-                      $(document).ready();
-                      $("#myModal_reg").modal("show"); //* shows register window
-                      $("#myModal_login").modal("hide"); //* hides login window
-                    }
-                  </script>
-
-                  <div class="text-center">Don't have an account yet? <a onClick="myModal_reg();" href="#">Sign up.</a></div>
-                </form>
-              </div>
-            </div>
-
-            <!-- //* modal footer -->
-            <div class="modal-footer">
-              <!-- //* close button -->
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- //* login modal end -->
-
-    <!-- //* register modal start -->
-    <div class="container">
-      <!-- //* id property is for the navbar link modal trigger -->
-      <div class="modal fade" id="myModal_reg">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <!-- //* modal header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Register</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-
-            <!-- //* modal body -->
-            <div class="modal-body">
-              <?php
-              if (isset($_GET['error'])) {
-                //* script for modal to appear when error plus the message below
-                echo '
-                <script>
-                  $(document).ready(function(){
-                  $("#myModal_reg").modal("show");
-                  });
-                </script>
-                ';
-
-                //* error handling for errors and success on signup form
-                if ($_GET['error'] == "emptyfields") {
-                  echo '<h5 class="bg-danger text-center">Fill all fields, please try again!</h5>';
-                } else if ($_GET['error'] == "invalidemailusername") {
-                  echo '<h5 class="bg-danger text-center">Username or email are taken!</h5>';
-                } else if ($_GET['error'] == "invalidemail") {
-                  echo '<h5 class="bg-danger text-center">Invalid email, please try again!</h5>';
-                } else if ($_GET['error'] == "usernameemailtaken") {
-                  echo '<h5 class="bg-danger text-center">Username or email is taken, please try again!</h5>';
-                } else if ($_GET['error'] == "invalidusername") {
-                  echo '<h5 class="bg-danger text-center">Invalid username, please try again!</h5>';
-                } else if ($_GET['error'] == "invalidpassword") {
-                  echo '<h5 class="bg-danger text-center">Invalid password, please try again!</h5>';
-                } else if ($_GET['error'] == "passworddontmatch") {
-                  echo '<h5 class="bg-danger text-center">Password must match, please try again!</h5>';
-                } else if ($_GET['error'] == "error1") {
-                  echo '<h5 class="bg-danger text-center">Error occurred, try again!</h5>';
-                } else if ($_GET['error'] == "error2") {
-                  echo '<h5 class="bg-danger text-center">Error occurred, try again!</h5>';
-                }
-              }
-
-              if (isset($_GET['signup'])) {
-                //* script for modal to appear when error plus the message below
-                echo '
-                <script>
-                  $(document).ready(function(){
-                  $("#myModal_reg").modal("show");
-                  });
-                </script>
-                ';
-
-                //* if signup success, show message
-                if ($_GET['signup'] == "success") {
-                  echo '<h5 class="bg-success text-center">Signup successful! please log in!</h5>';
-                }
-              }
-
-              echo '<br>';
-              ?>
-
-              <!-- //* actual sign up form -->
-              <div class="signup-form">
-                  <form action="includes/signup.inc.php" method="post">
-                  <!-- //* message -->
-                  <p class="hint-text">Create your account. It's free and only takes a minute.</p>
-
-                  <!-- //* username -->
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="uid" placeholder="Username" required="required">
-                    <small class="form-text text-muted">Username must be 4-20 characters long.</small>
-                  </div>
-
-                  <!-- //* email -->
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="mail" placeholder="Email" required="required">
-                  </div>
-
-                  <!-- //* password -->
-                  <div class="form-group">
-                    <input type="password" class="form-control" name="pwd" placeholder="Password" required="required">
-                    <small class="form-text text-muted">Password must be 6-20 characters long.</small>
-                  </div>
-
-                  <!-- //* password repeat -->
-                  <div class="form-group">
-                    <input type="password" class="form-control" name="pwd-repeat" placeholder="Confirm Password" required="required">
-                  </div>
-
-                  <!-- //* terms of use and privacy policy -->
-                  <div class="form-group">
-                    <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a>.</label>
-                  </div>
-
-                  <!-- //* register button -->
-                  <div class="form-group">
-                    <button type="submit" name="signup-submit" class="btn btn-dark btn-lg btn-block">Register</button>
-                  </div>
-                </form>
-
-                <!-- //* sign in if account already exists -->
+                <!-- //* login button -->
+                <div class="form-group">
+                  <button type="submit" name="login-submit" class="btn btn-dark btn-lg btn-block">Log In</button>
+                </div>
 
                 <!-- //* script to switch screens when registering -->
                 <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
                 <script type="text/javascript">
-                  function myModal_login(){
+                  function myModal_reg() {
                     $(document).ready();
-                    $("#myModal_reg").modal("hide"); //* hides register window
-                    $("#myModal_login").modal("show"); //* shows login window
+                    $("#myModal_reg").modal("show"); //* shows register window
+                    $("#myModal_login").modal("hide"); //* hides login window
                   }
                 </script>
 
-                <div class="text-center">Already have an account? <a onClick="myModal_login();" href="#">Log in.</a></div>
-              </div>
+                <div class="text-center">Don't have an account yet? <a onClick="myModal_reg();" href="#">Sign up.</a></div>
+              </form>
             </div>
+          </div>
 
-            <!-- //* modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-            </div>
+          <!-- //* modal footer -->
+          <div class="modal-footer">
+            <!-- //* close button -->
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
           </div>
         </div>
       </div>
     </div>
-    <!-- //* register modal end -->
+  </div>
+  <!-- //* login modal end -->
+
+  <!-- //* register modal start -->
+  <div class="container">
+    <!-- //* id property is for the navbar link modal trigger -->
+    <div class="modal fade" id="myModal_reg">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- //* modal header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Register</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- //* modal body -->
+          <div class="modal-body">
+            <?php
+            if (isset($_GET['error'])) {
+              //* script for modal to appear when error plus the message below
+              echo '
+                <script>
+                  $(document).ready(function(){
+                  $("#myModal_reg").modal("show");
+                  });
+                </script>
+                ';
+
+              //* error handling for errors and success on signup form
+              if ($_GET['error'] == "emptyfields") {
+                echo '<h5 class="bg-danger text-center">Fill all fields, please try again!</h5>';
+              } else if ($_GET['error'] == "invalidemailusername") {
+                echo '<h5 class="bg-danger text-center">Username or email are taken!</h5>';
+              } else if ($_GET['error'] == "invalidemail") {
+                echo '<h5 class="bg-danger text-center">Invalid email, please try again!</h5>';
+              } else if ($_GET['error'] == "usernameemailtaken") {
+                echo '<h5 class="bg-danger text-center">Username or email is taken, please try again!</h5>';
+              } else if ($_GET['error'] == "invalidusername") {
+                echo '<h5 class="bg-danger text-center">Invalid username, please try again!</h5>';
+              } else if ($_GET['error'] == "invalidpassword") {
+                echo '<h5 class="bg-danger text-center">Invalid password, please try again!</h5>';
+              } else if ($_GET['error'] == "passworddontmatch") {
+                echo '<h5 class="bg-danger text-center">Password must match, please try again!</h5>';
+              } else if ($_GET['error'] == "error1") {
+                echo '<h5 class="bg-danger text-center">Error occurred, try again!</h5>';
+              } else if ($_GET['error'] == "error2") {
+                echo '<h5 class="bg-danger text-center">Error occurred, try again!</h5>';
+              }
+            }
+
+            if (isset($_GET['signup'])) {
+              //* script for modal to appear when error plus the message below
+              echo '
+                <script>
+                  $(document).ready(function(){
+                  $("#myModal_reg").modal("show");
+                  });
+                </script>
+                ';
+
+              //* if signup success, show message
+              if ($_GET['signup'] == "success") {
+                echo '<h5 class="bg-success text-center">Signup successful! please log in!</h5>';
+              }
+            }
+
+            echo '<br>';
+            ?>
+
+            <!-- //* actual sign up form -->
+            <div class="signup-form">
+              <form action="includes/signup.inc.php" method="post">
+                <!-- //* message -->
+                <p class="hint-text">Create your account. It's free and only takes a minute.</p>
+
+                <!-- //* username -->
+                <div class="form-group">
+                  <input type="text" class="form-control" name="uid" placeholder="Username" required="required">
+                  <small class="form-text text-muted">Username must be 4-20 characters long.</small>
+                </div>
+
+                <!-- //* email -->
+                <div class="form-group">
+                  <input type="email" class="form-control" name="mail" placeholder="Email" required="required">
+                </div>
+
+                <!-- //* password -->
+                <div class="form-group">
+                  <input type="password" class="form-control" name="pwd" placeholder="Password" required="required">
+                  <small class="form-text text-muted">Password must be 6-20 characters long.</small>
+                </div>
+
+                <!-- //* password repeat -->
+                <div class="form-group">
+                  <input type="password" class="form-control" name="pwd-repeat" placeholder="Confirm Password" required="required">
+                </div>
+
+                <!-- //* terms of use click -->
+                <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+                <script type="text/javascript">
+                  function myModal_tou() {
+                    $(document).ready();
+                    $("#myModal_reg").modal("hide"); //* hides register window
+                    $("#myModal_tou ").modal("show"); //* shows login window
+                  }
+                </script>
+
+
+                <!-- //* terms of use and privacy policy -->
+                <div class="form-group">
+                  <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#" onClick="myModal_tou();">Terms of Use</a> &amp; <a href="#">Privacy Policy</a>.</label>
+                </div>
+
+                <!-- //* register button -->
+                <div class="form-group">
+                  <button type="submit" name="signup-submit" class="btn btn-dark btn-lg btn-block">Register</button>
+                </div>
+              </form>
+
+              <!-- //* sign in if account already exists -->
+
+              <!-- //* script to switch screens when registering -->
+              <script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+              <script type="text/javascript">
+                function myModal_login() {
+                  $(document).ready();
+                  $("#myModal_reg").modal("hide"); //* hides register window
+                  $("#myModal_login").modal("show"); //* shows login window
+                }
+              </script>
+
+              <div class="text-center">Already have an account? <a onClick="myModal_login();" href="#">Log in.</a></div>
+            </div>
+          </div>
+
+          <!-- //* modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //* register modal end -->
+
+
+  <!-- //* terms of use modal start -->
+  <div class="container">
+    <!-- //* id property is for the navbar link modal trigger -->
+    <div class="modal fade" id="myModal_tou">
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <!-- //* modal header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Terms of Use</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- //* modal body -->
+          <div class="modal-body">
+            <div class="modal-dialog modal-dialog-scrollable">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magni ex debitis aliquid pariatur eius, temporibus animi repellendus earum dolorum? Modi, sapiente ad sed nisi voluptate perspiciatis eaque aspernatur quis inventore ipsum quia nihil, soluta eius minus esse suscipit optio accusamus velit in eligendi tempora incidunt. Rem repellat harum omnis dolor quaerat officiis in ratione neque provident veniam iste odit ducimus, nobis amet facilis sunt, eius aliquam alias magni ut, consectetur laudantium vitae. Nostrum, quia esse delectus corporis, sapiente, cumque maxime deleniti error quod laudantium voluptatum harum iusto. Itaque odit ullam temporibus fuga quasi, eveniet saepe consequuntur dolor dolorum animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magni ex debitis aliquid pariatur eius, temporibus animi repellendus earum dolorum? Modi, sapiente ad sed nisi voluptate perspiciatis eaque aspernatur quis inventore ipsum quia nihil, soluta eius minus esse suscipit optio accusamus velit in eligendi tempora incidunt. Rem repellat harum omnis dolor quaerat officiis in ratione neque provident veniam iste odit ducimus, nobis amet facilis sunt, eius aliquam alias magni ut, consectetur laudantium vitae. Nostrum, quia esse delectus corporis, sapiente, cumque maxime deleniti error quod laudantium voluptatum harum iusto. Itaque odit ullam temporibus fuga quasi, eveniet saepe consequuntur dolor dolorum animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magni ex debitis aliquid pariatur eius, temporibus animi repellendus earum dolorum? Modi, sapiente ad sed nisi voluptate perspiciatis eaque aspernatur quis inventore ipsum quia nihil, soluta eius minus esse suscipit optio accusamus velit in eligendi tempora incidunt. Rem repellat harum omnis dolor quaerat officiis in ratione neque provident veniam iste odit ducimus, nobis amet facilis sunt, eius aliquam alias magni ut, consectetur laudantium vitae. Nostrum, quia esse delectus corporis, sapiente, cumque maxime deleniti error quod laudantium voluptatum harum iusto. Itaque odit ullam temporibus fuga quasi, eveniet saepe consequuntur dolor dolorum animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magni ex debitis aliquid pariatur eius, temporibus animi repellendus earum dolorum? Modi, sapiente ad sed nisi voluptate perspiciatis eaque aspernatur quis inventore ipsum quia nihil, soluta eius minus esse suscipit optio accusamus velit in eligendi tempora incidunt. Rem repellat harum omnis dolor quaerat officiis in ratione neque provident veniam iste odit ducimus, nobis amet facilis sunt, eius aliquam alias magni ut, consectetur laudantium vitae. Nostrum, quia esse delectus corporis, sapiente, cumque maxime deleniti error quod laudantium voluptatum harum iusto. Itaque odit ullam temporibus fuga quasi, eveniet saepe consequuntur dolor dolorum animi.
+            </div>
+          </div>
+
+          <!-- //* modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- //* register modal end -->

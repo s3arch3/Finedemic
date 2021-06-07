@@ -17,26 +17,26 @@ require "header.php";
         //* error handling on reservation creation
         if (isset($_GET['error3'])) {
           if ($_GET['error3'] == "emptyfields") {
-          echo '<h5 class="bg-danger text-center">Fill all fields, please try again!</h5>';
+            echo '<h5 class="bg-danger text-center">Fill all fields, please try again!</h5>';
           } else if ($_GET['error3'] == "invalidfname") {
-          echo '<h5 class="bg-danger text-center">Invalid first name, please try again!</h5>';
+            echo '<h5 class="bg-danger text-center">Invalid first name, please try again!</h5>';
           } else if ($_GET['error3'] == "invalidlname") {
-          echo '<h5 class="bg-danger text-center">Invalid last name, please try again!</h5>';
+            echo '<h5 class="bg-danger text-center">Invalid last name, please try again!</h5>';
           } else if ($_GET['error3'] == "invalidtele") {
-          echo '<h5 class="bg-danger text-center">Invalid telephone, please try again!</h5>';
+            echo '<h5 class="bg-danger text-center">Invalid telephone, please try again!</h5>';
           } else if ($_GET['error3'] == "invalidcomment") {
-          echo '<h5 class="bg-danger text-center">Invalid comment, please try again!</h5>';
+            echo '<h5 class="bg-danger text-center">Invalid comment, please try again!</h5>';
           } else if ($_GET['error3'] == "invalidguests") {
-          echo '<h5 class="bg-danger text-center">Invalid guests, please try again!</h5>';
+            echo '<h5 class="bg-danger text-center">Invalid guests, please try again!</h5>';
           } else if ($_GET['error3'] == "full") {
-          echo '<h5 class="bg-danger text-center">Reservations are full this date and timezone, please try again!</h5>';
+            echo '<h5 class="bg-danger text-center">Reservations are full this date and schedule, please try again!</h5>';
           }
         }
 
         //* reservation success
         if (isset($_GET['reservation'])) {
           if ($_GET['reservation'] == "success") {
-          echo '<h5 class="bg-success text-center">Your reservation was successfully created!</h5>';
+            echo '<h5 class="bg-success text-center">Your reservation was successfully created!</h5>';
           }
         }
         echo '<br>';
@@ -64,7 +64,7 @@ require "header.php";
             </div>
 
             <div class="form-group">
-              <label>Select Time Zone</label>
+              <label>Select Schedule</label>
               <select class="form-control" name="time">
                 <option>12:00 - 16:00</option>
                 <option>16:00 - 20:00</option>
@@ -103,8 +103,8 @@ require "header.php";
         </div>
         ';
       } else {
-      //* this line will execute if there is no user logged in the session
-      echo '
+        //* this line will execute if there is no user logged in the session
+        echo '
       <p class="text-center text-danger"><br>You are currently not logged in!<br></p>
       <p class="text-center">In order to make a reservation you have to create an account.<br><br><p>';
       }

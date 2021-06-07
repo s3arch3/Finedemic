@@ -14,7 +14,7 @@ require "header.php";
     <div class="col-md-12 text-center">
       <!-- //* takes you to reservation.php -->
       <br>
-      <button type="button" onclick="window.location.href='reservation.php'" class="btn btn-success btn-lg"><em>Reserve Now!</em></button>
+      <button type="button" onclick="window.location.href='reservation.php'" class="btn btn-success btn-lg" id="reserve-now">RESERVE NOW</button>
     </div>
   </div>
 </header>
@@ -24,7 +24,7 @@ require "header.php";
 <section id="aboutus">
   <!-- //* container start -->
   <div class="container">
-    <h3 class="text-center"><br>Finedemic</h3>
+    <h3 class="text-center section-title"><br><br><br>About Finedemic<br></h3>
     <!-- //* row start -->
     <div class="row">
       <!-- //* col start -->
@@ -39,14 +39,14 @@ require "header.php";
 
           <!-- //* carousel gallery -->
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img class="d-block w-100" src="img/3.jpeg" alt="First slide">
+            <div class="carousel-item active" id="img-carousel">
+              <img class="d-block w-100" src="img/menu/3.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/4.jpeg" alt="Second slide">
+              <img class="d-block w-100" src="img/menu/4.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="img/5.jpeg" alt="Third slide">
+              <img class="d-block w-100" src="img/menu/5.jpg" alt="Third slide">
             </div>
           </div>
 
@@ -72,8 +72,8 @@ require "header.php";
           <br>
           <hr>
           <h4 class="text-center">Our Story</h4><br>
-          <p><br>
-            The Finedemic is an online restaurant first established in 2021, by our founders Barruela, Brigoli, Garcia, Vibiesca and Villanueva. During the pandemic of the COVID-19 people within the Philippines has struggled to live in isolation, as it is a well needed precaution to fight against the pandemic, people could not be of close proximity of each other, go on to travel places they have not been, or even buy food for daily consumption. Hence, by our founders Finedemic is created, to help those who struggle during these trying times, providing immaculate service for our customers.
+          <p style="text-align: justify;"><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The Finedemic is an online restaurant first established in 2021, by our founders Barruela, Brigoli, Garcia, Vibiesca and Villanueva. <br><br> During the pandemic of the COVID-19 people within the Philippines has struggled to live in isolation, as it is a well needed precaution to fight against the pandemic, people could not be of close proximity of each other, go on to travel places they have not been, or even buy food for daily consumption. Hence, by our founders Finedemic is created, to help those who struggle during these trying times, providing immaculate service for our customers.
             <br><br><br>
           </p>
           <hr>
@@ -92,32 +92,32 @@ require "header.php";
 <!-- //* parallax area end -->
 
 <!-- //* gallery start -->
-<div class id="gallery"><br>
+<div class id="gallery">
   <div class="container">
-    <h3 class="text-center"><br>Gallery<br><br></h3>
+    <h3 class="text-center section-title"><br><br><br>Gallery<br><br><br></h3>
     <div class="d-flex flex-row flex-wrap justify-content-center">
       <!-- //* images -->
       <div class="d-flex flex-column">
-        <img src="img/1.jpg" class="img-fluid">
-        <img src="img/2.png" class="img-fluid">
+        <img src="img/menu/0.jpg" class="menu-margin img-fluid">
+        <img src="img/menu/2.jpg" class="menu-margin img-fluid">
       </div>
 
       <!-- //* images -->
       <div class="d-flex flex-column">
-        <img src="img/3.jpeg" class="img-fluid">
-        <img src="img/4.jpeg" class="img-fluid">
+        <img src="img/menu/3.jpg" class="menu-margin img-fluid">
+        <img src="img/menu/4.jpg" class="menu-margin img-fluid">
       </div>
 
       <!-- //* images -->
       <div class="d-flex flex-column">
-        <img src="img/5.jpeg" class="img-fluid">
-        <img src="img/6.jpeg" class="img-fluid">
+        <img src="img/menu/5.jpg" class="menu-margin img-fluid">
+        <img src="img/menu/6.jpg" class="menu-margin img-fluid">
       </div>
 
       <!-- //* images -->
       <div class="d-flex flex-column">
-        <img src="img/7.jpeg" class="img-fluid">
-        <img src="img/8.jpeg" class="img-fluid">
+        <img src="img/menu/7.jpg" class="menu-margin img-fluid">
+        <img src="img/menu/8.jpg" class="menu-margin img-fluid">
       </div>
     </div>
   </div>
@@ -127,15 +127,15 @@ require "header.php";
 <br><br>
 
 <!-- //* call to action again start -->
-<div class="container" id="reservation">
+<div class="col-md-12 text-center" id="reservation">
   <!-- //* title -->
-  <h3 class="text-center"><br><br>Reservation<br><br></h3>
+  <h3 class="text-center section-title"><br><br><br>Reservation<br><br></h3>
 
   <!-- //* bg image -->
-  <img src="img/16.jpg" class="img-fluid rounded">
-
+  <img src="img/16.jpg" class="container">
+  <br><br><br>
   <!-- //* make a reservation now! -->
-  <button type="button" onclick="window.location.href='reservation.php'" class="btn btn-outline-dark btn-block btn-lg">Make a Reservation Now!</button>
+  <button type="button" onclick="window.location.href='reservation.php'" class="btn btn-outline-dark btn-lg" id="make-a-reservation">MAKE A RESERVATION</button>
 </div>
 <!-- //* call to action again end -->
 
@@ -151,7 +151,7 @@ require "header.php";
   <!-- //* container start -->
   <div class="container">
     <!-- //* title -->
-    <h3 class="text-center"><br><br>Find us!</h3><br>
+    <h3 class="text-center section-title"><br><br>Find us!</h3><br>
     <!-- //* google maps -->
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.2656526508868!2d121.03012032716661!3d14.754057761020642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b1cc9c9c83e9%3A0x303a03298da24ddb!2sUniversity%20of%20Caloocan%20City%20-%20Congressional%20Campus!5e0!3m2!1sen!2sph!4v1622742653026!5m2!1sen!2sph" style="width:100%;  height:250px; border:0;" allowfullscreen></iframe>
     <!-- //* row start -->
@@ -171,7 +171,7 @@ require "header.php";
 
             <!-- //* check open time -->
             <div class="form-group">
-              <button type="submit" name="check_schedule" class="btn btn-dark btn-block">Check Open Time</button>
+              <button type="submit" name="check_schedule" class="btn btn-dark btn-block" id="make-a-reservation">CHECK OPEN TIME</button>
             </div>
           </form>
 
@@ -196,7 +196,7 @@ require "header.php";
                   <tbody>
                     <tr>
                       <th scope="row"><em>' . $date . '</em></th>
-                      <td>' . $row['open_time'] . '/td>
+                      <td>' . $row['open_time'] . '</td>
                       <td>' . $row['close_time'] . '</td>
                     </tr>
                   </tbody>

@@ -19,7 +19,7 @@ if (isset($_SESSION['user_id'])) {
           <th scope="col">Full Name</th>
           <th scope="col">Guests</th>
           <th scope="col">Reservation Date</th>
-          <th scope="col">Time Zone</th>
+          <th scope="col">Schedule</th>
           <th scope="col">Telephone</th>
           <th scope="col">Register Date</th>
           <th scope="col">Comments</th>
@@ -64,7 +64,7 @@ if (isset($_SESSION['user_id'])) {
       <th scope="col">Guests</th>
       <th scope="col">Tables</th>
       <th scope="col">Reservation Date</th>
-      <th scope="col">Time Zone</th>
+      <th scope="col">Schedule</th>
       <th scope="col">Telephone</th>
       <th scope="col">Register Date</th>
       <th scope="col">Comments</th>

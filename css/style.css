@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap");
 
 * {
   margin: 0;
@@ -7,13 +7,20 @@
   scroll-behavior: smooth;
 }
 
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+  filter: invert(100%);
+}
+
 body {
   overflow-y: scroll;
   overflow-x: hidden;
 }
 
-h3 {
-  text-shadow: 2px 1px grey;
+.section-title {
+  /* text-shadow: 2px 1px grey; */
+  font-weight: bold;
 }
 
 .flex-column {
@@ -32,8 +39,10 @@ h3 {
 }
 
 .header {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/1.jpg); */
-  background-image: url(../img/1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 128, 0, 0.2)),
+    url(../img/1.jpg);
+  /* background-image: url(../img/1.jpg); */
+  /* filter: brightness(70%); */
   height: 80vh;
   background-position: center;
   background-size: cover;
@@ -41,15 +50,18 @@ h3 {
 
 .header2 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/6.jpeg);
+    url(../img/2.jpg);
   height: 40vh;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
 }
-
+.menu-margin {
+  margin: 10px;
+  border-radius: 10px;
+}
 .navbar {
-  background-color: orange;
+  background-color: #fa9f42;
 }
 
 .navbar-brand {
@@ -61,12 +73,13 @@ h3 {
 }
 
 .navbar .navbar-nav .nav-item a {
-  color: #3a3b3b;
+  color: black;
+  font-weight: 600;
 }
 
 .navbar .navbar-nav .nav-item a:hover {
-  background-color: #d1c8c8;
-  color: green;
+  /* background-color: white; */
+  color: white;
 }
 
 .header-button .btn {
@@ -77,8 +90,43 @@ h3 {
   margin: 15px;
 }
 
+#img-carousel {
+  width: 600px;
+  object-fit: cover;
+}
+
 .nav-link {
   cursor: pointer;
+}
+
+#nav-link-black {
+  color: black;
+}
+
+#nav-link-black:hover {
+  filter: invert(100%);
+}
+
+#nav-link-black1 {
+  background-color: #0b6e4f;
+  border-width: 0;
+  color: white;
+}
+
+#nav-link-black1:hover {
+  background-color: white;
+  color: black;
+}
+
+#reserve-now {
+  background-color: #0b6e4f;
+  border-width: 0;
+}
+
+#reserve-now:hover {
+  background-color: white;
+  color: black;
+  border-width: 0;
 }
 
 .footer {
@@ -98,13 +146,16 @@ h3 {
   height: 50px;
   border-radius: 50%;
   background: lightgray;
-  line-height: 2;
+  line-height: 3;
   transition: 0.3s;
-  border: 10px solid lightgray;
+  opacity: 100%;
+  /* border: 10px solid lightgray; */
+  background-color: #fa9f42;
 }
 
 .social-icon a:hover .fa {
-  border: 10px solid black;
+  background-color: #0b6e4f;
+  color: white;
 }
 
 .bordernow {
@@ -112,4 +163,17 @@ h3 {
   border-bottom: 2px solid white;
   margin: 0 auto;
   margin-top: 20px;
+}
+
+#make-a-reservation {
+  color: #0b6e4f;
+  border-style: solid;
+  border-color: #0b6e4f;
+  background-color: white;
+}
+
+#make-a-reservation:hover {
+  color: white;
+  background-color: #0b6e4f;
+  border: 1px solid #0b6e4f;
 }

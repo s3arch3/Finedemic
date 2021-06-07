@@ -5,16 +5,16 @@
           <div class="col-sm-12 text-center">
             <div class="social-icon">
               <!-- //* facebook -->
-              <a href="index.php"><i class="fa fa-facebook"></i></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-facebook"></i></a>
 
               <!-- //* twitter -->
-              <a href="index.php"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-twitter"></i></a>
 
               <!-- //* pinterest -->
-              <a href="index.php"><i class="fa fa-pinterest"></i></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-pinterest"></i></a>
 
               <!-- //* rss -->
-              <a href="index.php"><i class="fa fa-rss"></i></a>
+              <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-rss"></i></a>
             </div>
 
             <!-- //* copyright and contact -->
@@ -26,7 +26,8 @@
         </div>
       </div>
     </footer>
-  </body>
-  <!-- //* body end -->
-</html>
-<!-- //* html document end -->
+    </body>
+    <!-- //* body end -->
+
+    </html>
+    <!-- //* html document end -->
