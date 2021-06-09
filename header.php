@@ -327,15 +327,16 @@ session_start();
                 <script type="text/javascript">
                   function myModal_tou() {
                     $(document).ready();
-                    $("#myModal_reg").modal("hide"); //* hides register window
-                    $("#myModal_tou ").modal("show"); //* shows login window
+                    // $("#myModal_reg").modal("hide"); //* hides register window
+                    // $("#myModal_tou ").modal("show"); //* shows login window
+                    open("./terms.php"); //* opens new tab of the tou
                   }
                 </script>
 
 
                 <!-- //* terms of use and privacy policy -->
                 <div class="form-group">
-                  <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#" onClick="myModal_tou();">Terms of Use</a> &amp; <a href="#">Privacy Policy</a>.</label>
+                  <label class="checkbox-inline"><input type="checkbox" required="required"> I accept the <a href="#" onClick="myModal_tou();">Terms of Use</a> &amp; <a href="#" onClick="myModal_tou();">Privacy Policy</a>.</label>
                 </div>
 
                 <!-- //* register button -->
@@ -357,36 +358,6 @@ session_start();
               </script>
 
               <div class="text-center">Already have an account? <a onClick="myModal_login();" href="#">Log in.</a></div>
-            </div>
-          </div>
-
-          <!-- //* modal footer -->
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- //* register modal end -->
-
-
-  <!-- //* terms of use modal start -->
-  <div class="container">
-    <!-- //* id property is for the navbar link modal trigger -->
-    <div class="modal fade" id="myModal_tou">
-      <div class="modal-dialog modal-dialog-scrollable">
-        <div class="modal-content">
-          <!-- //* modal header -->
-          <div class="modal-header">
-            <h4 class="modal-title">Terms of Use</h4>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
-
-          <!-- //* modal body -->
-          <div class="modal-body">
-            <div class="modal-dialog modal-dialog-scrollable">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magni ex debitis aliquid pariatur eius, temporibus animi repellendus earum dolorum? Modi, sapiente ad sed nisi voluptate perspiciatis eaque aspernatur quis inventore ipsum quia nihil, soluta eius minus esse suscipit optio accusamus velit in eligendi tempora incidunt. Rem repellat harum omnis dolor quaerat officiis in ratione neque provident veniam iste odit ducimus, nobis amet facilis sunt, eius aliquam alias magni ut, consectetur laudantium vitae. Nostrum, quia esse delectus corporis, sapiente, cumque maxime deleniti error quod laudantium voluptatum harum iusto. Itaque odit ullam temporibus fuga quasi, eveniet saepe consequuntur dolor dolorum animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magni ex debitis aliquid pariatur eius, temporibus animi repellendus earum dolorum? Modi, sapiente ad sed nisi voluptate perspiciatis eaque aspernatur quis inventore ipsum quia nihil, soluta eius minus esse suscipit optio accusamus velit in eligendi tempora incidunt. Rem repellat harum omnis dolor quaerat officiis in ratione neque provident veniam iste odit ducimus, nobis amet facilis sunt, eius aliquam alias magni ut, consectetur laudantium vitae. Nostrum, quia esse delectus corporis, sapiente, cumque maxime deleniti error quod laudantium voluptatum harum iusto. Itaque odit ullam temporibus fuga quasi, eveniet saepe consequuntur dolor dolorum animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magni ex debitis aliquid pariatur eius, temporibus animi repellendus earum dolorum? Modi, sapiente ad sed nisi voluptate perspiciatis eaque aspernatur quis inventore ipsum quia nihil, soluta eius minus esse suscipit optio accusamus velit in eligendi tempora incidunt. Rem repellat harum omnis dolor quaerat officiis in ratione neque provident veniam iste odit ducimus, nobis amet facilis sunt, eius aliquam alias magni ut, consectetur laudantium vitae. Nostrum, quia esse delectus corporis, sapiente, cumque maxime deleniti error quod laudantium voluptatum harum iusto. Itaque odit ullam temporibus fuga quasi, eveniet saepe consequuntur dolor dolorum animi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magni ex debitis aliquid pariatur eius, temporibus animi repellendus earum dolorum? Modi, sapiente ad sed nisi voluptate perspiciatis eaque aspernatur quis inventore ipsum quia nihil, soluta eius minus esse suscipit optio accusamus velit in eligendi tempora incidunt. Rem repellat harum omnis dolor quaerat officiis in ratione neque provident veniam iste odit ducimus, nobis amet facilis sunt, eius aliquam alias magni ut, consectetur laudantium vitae. Nostrum, quia esse delectus corporis, sapiente, cumque maxime deleniti error quod laudantium voluptatum harum iusto. Itaque odit ullam temporibus fuga quasi, eveniet saepe consequuntur dolor dolorum animi.
             </div>
           </div>
 
